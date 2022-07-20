@@ -1,25 +1,3 @@
-# Amount Number to String of Words Using Zoho Deluge
-
->How to do convert number based amount into Spellable String of Words using Deluge Function in Zoho
-
-Hi, This is Sayan.
-
-In this repo I have shared an example function deluge code (snippet) which will **help you to convert any given amount or number to Sentence of Words which spells out the amount in Words**
-
-This code can be helpful in the below scenarios:
-- Converting Amounts in Creator Made Invoice, Sales Order, Purchase Order Page Template
-- Converting Amounts in CRM Modules
-- Converting Amounts in Zoho Projects for Billing Purposes
-
-
-## To create the validation:
-### Step 1 -
-Create a Workflow upon which the Function should be called with proper conditions, and make sure to pass the "n" as Integer Input which will be checked for validation
-### Step 2 -
-Use Map(); as the return value so that this Function can return more data in future, as per requirements arise.
-### Step 3 -
-Paste the below Code in the Function:
-```
 string Amount_to_Words(int n)
 {
 	units = List:String({"","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"});
@@ -440,8 +418,3 @@ string Amount_to_Words(int n)
 	}
 	return get_final_data;
 }
-```
-[Link to Sample Deluge Function](Amount_to_Words.dg)
-
-### Step 4 -
-Now You can call the function with the Integer Value passed as "n", so that the deluge code can return the values as String of Words, which converts the passed argument as Words.
